@@ -1,0 +1,26 @@
+title: UIty.css - Demo
+email: contact@webisland.agency
+description: >-
+  UIty.css - Demo
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-assets
+
+assets:
+  compress:
+    css: default
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
