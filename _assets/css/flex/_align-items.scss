@@ -1,7 +1,7 @@
 @mixin align-items {
   &_center {
     -webkit-align-items: center;
-    align-items: row;
+    align-items: center;
   }
 }
 
