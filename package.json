@@ -1,0 +1,19 @@
+{
+  "name": "uity-css",
+  "version": "1.0.0",
+  "description": "Run UIty.css demo with a command `jekyll serve` and access via `localhost:4000`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webisland/webisland.uity-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webisland/webisland.uity-css/issues"
+  },
+  "homepage": "https://github.com/webisland/webisland.uity-css#readme"
+}
