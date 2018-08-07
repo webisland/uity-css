@@ -1,13 +1,11 @@
-$asset_host: '' !default;
-
 // utils/responsive
-$sm-mobile-max-width: 479px;
-$mobile-max-width: 767px;
-$tablet-max-width: 991px;
+$sm-mobile-max-width: 479px !default;
+$mobile-max-width: 767px !default;
+$tablet-max-width: 991px !default;
 
 // components/section
-$section-content-max-width: 1140px;
-$section-content-small-max-width: 800px;
-$section-content-large-max-width: 1300px;
+$section-content-max-width: 1140px !default;
+$section-content-small-max-width: 800px !default;
+$section-content-large-max-width: 1300px !default;
 
 // properties/b-padding
