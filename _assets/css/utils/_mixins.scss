@@ -15,3 +15,21 @@
   -moz-appearance: $appearance;
   appearance: $appearance;
 }
+
+@mixin input-placeholder($color, $font-size) {
+  &::placeholder {
+    color: $color;
+    font-size: $font-size;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+}
