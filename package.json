@@ -1,6 +1,6 @@
 {
   "name": "uity-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run UIty.css demo with a command `jekyll serve` and access via `localhost:4000`",
   "main": "index.js",
   "private": true,
