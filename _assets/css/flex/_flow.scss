@@ -4,35 +4,40 @@
     flex-flow: row;
   }
 
-  &_row-reverse {
+  &_row-r {
     -webkit-flex-flow: row-reverse;
     flex-flow: row-reverse;
   }
 
-  &_column {
+  &_col {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+
+  &_col-r {
     -webkit-flex-flow: column;
     flex-flow: column;
   }
 }
 
-.flow {
+.flw {
   @include flow;
 }
 
 @include sm-mobile {
-  .xs-flow {
+  .xs-flw {
     @include flow;
   }
 }
 
 @include mobile {
-  .sm-flow {
+  .sm-flw {
     @include flow;
   }
 }
 
 @include tablet {
-  .md-flow {
+  .md-flw {
     @include flow;
   }
 }

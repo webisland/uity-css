@@ -1,13 +1,13 @@
 @mixin justify {
-  &_space-between {
+  &_sp-b {
     justify-content: space-between;
   }
 
-  &_space-around {
+  &_sp-a {
     justify-content: space-around;
   }
 
-  &_center {
+  &_cntr {
     justify-content: center;
   }
 
@@ -16,24 +16,24 @@
   }
 }
 
-.justify {
+.jst {
   @include justify;
 }
 
 @include tablet {
-  .md-justify {
+  .md-jst {
     @include justify;
   }
 }
 
 @include mobile {
-  .sm-justify {
+  .sm-jst {
     @include justify;
   }
 }
 
 @include sm-mobile {
-  .xs-justify {
+  .xs-jst {
     @include justify;
   }
 }

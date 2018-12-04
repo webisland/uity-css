@@ -1,11 +1,17 @@
 // utils/responsive
-$sm-mobile-max-width: 479px !default;
-$mobile-max-width: 767px !default;
-$tablet-max-width: 991px !default;
+$xs-max-width: 479px !default;
+$sm-max-width: 767px !default;
+$md-max-width: 991px !default;
 
 // components/section
 $section-content-max-width: 1140px !default;
 $section-content-small-max-width: 800px !default;
 $section-content-large-max-width: 1300px !default;
 
-// properties/b-padding
+// properties/padding
+$padding-vertical: 60px !default;
+$padding-horizontal: 30px !default;
+$md-padding-vertical: 45px !default;
+$md-padding-horizontal: 25px !default;
+$sm-padding-vertical: 40px !default;
+$sm-padding-horizontal: 20px !default;

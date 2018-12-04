@@ -4,11 +4,11 @@
     max-width: $section-content-max-width;
     position: relative;
 
-    &_small {
+    &_sm {
       max-width: $section-content-small-max-width;
     }
 
-    &_large {
+    &_lg {
       max-width: $section-content-large-max-width;
     }
   }

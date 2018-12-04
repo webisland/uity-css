@@ -44,24 +44,24 @@
   }
 }
 
-.width {
+.w {
   @include width;
 }
 
 @include tablet {
-  .md-width {
+  .md-w {
     @include width;
   }
 }
 
 @include mobile {
-  .sm-width {
+  .sm-w {
     @include width;
   }
 }
 
 @include sm-mobile {
-  .xs-width {
+  .xs-w {
     @include width;
   }
 }
