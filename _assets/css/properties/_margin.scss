@@ -15,23 +15,23 @@
 @mixin margin_v($direction) {
   &_#{$direction} {
     @include margin_value($direction, 0);
-    @include margin_value($direction, 5px);
-    @include margin_value($direction, 10px);
-    @include margin_value($direction, 15px);
-    @include margin_value($direction, 20px);
-    @include margin_value($direction, 30px);
-    @include margin_value($direction, 40px);
+    @include margin_value($direction, 5);
+    @include margin_value($direction, 10);
+    @include margin_value($direction, 15);
+    @include margin_value($direction, 20);
+    @include margin_value($direction, 30);
+    @include margin_value($direction, 40);
   }
 }
 
 @mixin margin_h($direction) {
   &_#{$direction} {
     @include margin_value($direction, 0);
-    @include margin_value($direction, 5px);
-    @include margin_value($direction, 10px);
-    @include margin_value($direction, 15px);
-    @include margin_value($direction, 20px);
-    @include margin_value($direction, 30px);
+    @include margin_value($direction, 5);
+    @include margin_value($direction, 10);
+    @include margin_value($direction, 15);
+    @include margin_value($direction, 20);
+    @include margin_value($direction, 30);
   }
 }
 
