@@ -12,4 +12,66 @@
       max-width: $section-content-large-max-width;
     }
   }
+
+  &__title {
+    font-family: $section-title-font-family;
+    font-size: $section-title-font-size;
+    font-weight: $section-title-font-weight;
+    line-height: $section-title-line-height;
+  }
+
+  &__subtitle {
+    font-family: $section-subtitle-font-family;
+    font-size: $section-subtitle-font-size;
+    font-weight: $section-subtitle-font-weight;
+    line-height: $section-subtitle-line-height;
+  }
+}
+
+@include desktop {
+  .section {
+    &__title {
+      font-size: $lg-section-title-font-size;
+      font-weight: $lg-section-title-font-weight;
+      line-height: $lg-section-title-line-height;
+    }
+
+    &__subtitle {
+      font-size: $lg-section-subtitle-font-size;
+      font-weight: $lg-section-subtitle-font-weight;
+      line-height: $lg-section-subtitle-line-height;
+    }
+  }
+}
+
+@include tablet {
+  .section {
+    &__title {
+      font-size: $md-section-title-font-size;
+      font-weight: $md-section-title-font-weight;
+      line-height: $md-section-title-line-height;
+    }
+
+    &__subtitle {
+      font-size: $md-section-subtitle-font-size;
+      font-weight: $md-section-subtitle-font-weight;
+      line-height: $md-section-subtitle-line-height;
+    }
+  }
+}
+
+@include mobile {
+  .section {
+    &__title {
+      font-size: $sm-section-title-font-size;
+      font-weight: $sm-section-title-font-weight;
+      line-height: $sm-section-title-line-height;
+    }
+
+    &__subtitle {
+      font-size: $sm-section-subtitle-font-size;
+      font-weight: $sm-section-subtitle-font-weight;
+      line-height: $sm-section-subtitle-line-height;
+    }
+  }
 }

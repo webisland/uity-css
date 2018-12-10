@@ -1,0 +1,41 @@
+.button {
+  background-color: $button-background-color;
+  border: $button-border-width $button-border-type $button-border-color;
+  border-radius: $button-border-radius;
+  color: $button-color;
+  display: inline-block;
+  font-family: $button-font-family;
+  text-decoration: none;
+  text-transform: $button-text-transform;
+  text-align: center;
+
+  &_xs {
+    font-size: $button-xs-font-size;
+    min-width: $button-xs-min-width;
+    padding: $button-xs-padding;
+  }
+
+  &_sm {
+    font-size: $button-sm-font-size;
+    min-width: $button-sm-min-width;
+    padding: $button-sm-padding;
+  }
+
+  &_md {
+    font-size: $button-md-font-size;
+    min-width: $button-md-min-width;
+    padding: $button-md-padding;
+  }
+
+  &_lg {
+    font-size: $button-lg-font-size;
+    min-width: $button-lg-min-width;
+    padding: $button-lg-padding;
+  }
+
+  &_xl {
+    font-size: $button-xl-font-size;
+    min-width: $button-xl-min-width;
+    padding: $button-xl-padding;
+  }
+}
