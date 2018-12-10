@@ -77,9 +77,9 @@ $button-xl-padding: 20px !default;
 /* properties/padding */
 $padding-vertical: 60px !default;
 $padding-horizontal: 30px !default;
-$lg-padding-vertical: 60px !default;
-$lg-padding-horizontal: 30px !default;
-$md-padding-vertical: 45px !default;
-$md-padding-horizontal: 25px !default;
-$sm-padding-vertical: 40px !default;
-$sm-padding-horizontal: 20px !default;
+$lg-padding-vertical: $padding-vertical !default;
+$lg-padding-horizontal: $padding-horizontal !default;
+$md-padding-vertical: $lg-padding-vertical !default;
+$md-padding-horizontal: $lg-padding-horizontal !default;
+$sm-padding-vertical: $md-padding-vertical !default;
+$sm-padding-horizontal: $md-padding-horizontal !default;
