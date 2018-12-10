@@ -1,7 +1,8 @@
 // utils/responsive
-$xs-max-width: 479px !default;
-$sm-max-width: 767px !default;
-$md-max-width: 991px !default;
+$lg-breakpoint: 1440px !default;
+$md-breakpoint: 1024px !default;
+$sm-breakpoint: 767px !default;
+$xs-breakpoint: 479px !default;
 
 // components/page
 $page-font-family: Arial, sans-serif !default;
@@ -15,6 +16,8 @@ $section-content-large-max-width: 1300px !default;
 // properties/padding
 $padding-vertical: 60px !default;
 $padding-horizontal: 30px !default;
+$lg-padding-vertical: 60px !default;
+$lg-padding-horizontal: 30px !default;
 $md-padding-vertical: 45px !default;
 $md-padding-horizontal: 25px !default;
 $sm-padding-vertical: 40px !default;

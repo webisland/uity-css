@@ -1,0 +1,73 @@
+@mixin margin_value($direction, $value) {
+  &_#{$value} {
+    @if ($direction == 'h') {
+      margin-left: $value;
+      margin-right: $value;
+    } @else if $direction == 'v' {
+      margin-bottom: $value;
+      margin-top: $value;
+    } @else {
+      margin-#{$direction}: $value;
+    }
+  }
+}
+
+@mixin margin_v($direction) {
+  &_#{$direction} {
+    @include margin_value($direction, 0);
+    @include margin_value($direction, 5px);
+    @include margin_value($direction, 10px);
+    @include margin_value($direction, 15px);
+    @include margin_value($direction, 20px);
+    @include margin_value($direction, 30px);
+    @include margin_value($direction, 40px);
+  }
+}
+
+@mixin margin_h($direction) {
+  &_#{$direction} {
+    @include margin_value($direction, 0);
+    @include margin_value($direction, 5px);
+    @include margin_value($direction, 10px);
+    @include margin_value($direction, 15px);
+    @include margin_value($direction, 20px);
+    @include margin_value($direction, 30px);
+  }
+}
+
+@mixin margin {
+  @include margin_h('h');
+  @include margin_h('left');
+  @include margin_h('right');
+  @include margin_v('v');
+  @include margin_v('top');
+  @include margin_v('bottom');
+}
+
+.margin {
+  @include margin;
+}
+
+@include desktop {
+  .lg-margin {
+    @include margin;
+  }
+}
+
+@include tablet {
+  .md-margin {
+    @include margin;
+  }
+}
+
+@include mobile {
+  .sm-margin {
+    @include margin;
+  }
+}
+
+@include portrait-mobile {
+  .xs-margin {
+    @include margin;
+  }
+}

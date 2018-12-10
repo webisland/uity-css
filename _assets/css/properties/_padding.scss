@@ -1,63 +1,41 @@
-.p {
+@mixin padding($horizontal, $vertical) {
   &_h {
-    padding-left: $padding-horizontal;
-    padding-right: $padding-horizontal;
+    padding-left: $horizontal;
+    padding-right: $horizontal;
   }
 
   &_v {
-    padding-bottom: $padding-vertical;
-    padding-top: $padding-vertical;
+    padding-bottom: $vertical;
+    padding-top: $vertical;
   }
 
-  &_t {
-    padding-top: $padding-vertical;
+  &_top {
+    padding-top: $vertical;
   }
 
-  &_b {
-    padding-bottom: $padding-vertical;
+  &_bottom {
+    padding-bottom: $vertical;
+  }
+}
+
+.padding {
+  @include padding($padding-horizontal, $padding-vertical);
+}
+
+@include desktop {
+  .padding {
+    @include padding($lg-padding-horizontal, $lg-padding-vertical);
   }
 }
 
 @include tablet {
-  .p {
-    &_h {
-      padding-left: $md-padding-horizontal;
-      padding-right: $md-padding-horizontal;
-    }
-
-    &_v {
-      padding-bottom: $md-padding-vertical;
-      padding-top: $md-padding-vertical;
-    }
-
-    &_t {
-      padding-top: $md-padding-vertical;
-    }
-
-    &_b {
-      padding-bottom: $md-padding-vertical;
-    }
+  .padding {
+    @include padding($md-padding-horizontal, $md-padding-vertical);
   }
 }
 
 @include mobile {
-  .p {
-    &_h {
-      padding-left: $sm-padding-horizontal;
-      padding-right: $sm-padding-horizontal;
-    }
-
-    &_v {
-      padding-bottom: $sm-padding-vertical;
-      padding-top: $sm-padding-vertical;
-    }
-
-    &_t {
-      padding-top: $sm-padding-vertical;
-    }
-
-    &_b {
-      padding-bottom: $sm-padding-vertical;
-    }
+  .padding {
+    @include padding($sm-padding-horizontal, $sm-padding-vertical);
   }
 }

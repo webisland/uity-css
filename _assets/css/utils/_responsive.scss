@@ -1,17 +1,23 @@
-@mixin sm-mobile {
-  @media (max-width: $xs-max-width) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: $sm-max-width) {
+@mixin desktop {
+  @media (max-width: $lg-breakpoint) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: $md-max-width) {
+  @media (max-width: $md-breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $sm-breakpoint) {
+    @content;
+  }
+}
+
+@mixin portrait-mobile {
+  @media (max-width: $xs-breakpoint) {
     @content;
   }
 }

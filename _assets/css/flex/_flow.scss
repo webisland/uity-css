@@ -4,7 +4,7 @@
     flex-flow: row;
   }
 
-  &_row-r {
+  &_row-rev {
     -webkit-flex-flow: row-reverse;
     flex-flow: row-reverse;
   }
@@ -14,30 +14,36 @@
     flex-flow: column;
   }
 
-  &_col-r {
+  &_col-rev {
     -webkit-flex-flow: column;
     flex-flow: column;
   }
 }
 
-.flw {
+.flow {
   @include flow;
 }
 
-@include sm-mobile {
-  .xs-flw {
-    @include flow;
-  }
-}
-
-@include mobile {
-  .sm-flw {
+@include desktop {
+  .sm-flow {
     @include flow;
   }
 }
 
 @include tablet {
-  .md-flw {
+  .md-flow {
+    @include flow;
+  }
+}
+
+@include mobile {
+  .sm-flow {
+    @include flow;
+  }
+}
+
+@include portrait-mobile {
+  .xs-flow {
     @include flow;
   }
 }
