@@ -39,15 +39,15 @@ $section-subtitle-font-family: $page-font-family !default;
 $section-subtitle-font-size: 24px !default;
 $section-subtitle-font-weight: 600 !default;
 $section-subtitle-line-height: 1 !default;
-$lg-section-subtitle-font-size: $section-title-font-size !default;
-$lg-section-subtitle-font-weight: $section-title-font-weight !default;
-$lg-section-subtitle-line-height: $section-title-line-height !default;
-$md-section-subtitle-font-size: $lg-section-title-font-size !default;
-$md-section-subtitle-font-weight: $lg-section-title-font-weight !default;
-$md-section-subtitle-line-height: $lg-section-title-line-height !default;
-$sm-section-subtitle-font-size: $md-section-title-font-size !default;
-$sm-section-subtitle-font-weight: $md-section-title-font-weight !default;
-$sm-section-subtitle-line-height: $md-section-title-line-height !default;
+$lg-section-subtitle-font-size: $section-subtitle-font-size !default;
+$lg-section-subtitle-font-weight: $section-subtitle-font-weight !default;
+$lg-section-subtitle-line-height: $section-subtitle-line-height !default;
+$md-section-subtitle-font-size: $lg-section-subtitle-font-size !default;
+$md-section-subtitle-font-weight: $lg-section-subtitle-font-weight !default;
+$md-section-subtitle-line-height: $lg-section-subtitle-line-height !default;
+$sm-section-subtitle-font-size: $md-section-subtitle-font-size !default;
+$sm-section-subtitle-font-weight: $md-section-subtitle-font-weight !default;
+$sm-section-subtitle-line-height: $md-section-subtitle-line-height !default;
 
 /* components/button */
 $button-background-color: #000 !default;
