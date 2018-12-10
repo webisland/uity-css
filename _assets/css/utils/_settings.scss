@@ -5,15 +5,15 @@ $sm-breakpoint: 767px !default;
 $xs-breakpoint: 479px !default;
 
 /* components/page */
-$page-background-color: #FFF;
-$page-color: #000;
+$page-background-color: #FFF !default;
+$page-color: #000 !default;
 $page-font-family: Arial, sans-serif !default;
 $page-font-size: 16px !default;
 $page-paragraph-line-height: 1.6 !default;
 
 /* components/header */
-$header-background-color: #FFF;
-$header-color: #000;
+$header-background-color: #FFF !default;
+$header-color: #000 !default;
 $header-content-height: 60px !default;
 
 /* components/section */
@@ -50,8 +50,8 @@ $sm-section-subtitle-font-weight: $md-section-title-font-weight !default;
 $sm-section-subtitle-line-height: $md-section-title-line-height !default;
 
 /* components/button */
-$button-background-color: #000;
-$button-color: #FFF;
+$button-background-color: #000 !default;
+$button-color: #FFF !default;
 $button-border-width: 2px !default;
 $button-border-type: solid !default;
 $button-border-color: transparent !default;
