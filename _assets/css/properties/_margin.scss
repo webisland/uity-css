@@ -1,13 +1,13 @@
 @mixin margin_value($direction, $value) {
   &_#{$value} {
     @if ($direction == 'h') {
-      margin-left: $value;
-      margin-right: $value;
+      margin-left: #{$value + 'px'};
+      margin-right: #{$value + 'px'};
     } @else if $direction == 'v' {
-      margin-bottom: $value;
-      margin-top: $value;
+      margin-bottom: #{$value + 'px'};
+      margin-top: #{$value + 'px'};
     } @else {
-      margin-#{$direction}: $value;
+      margin-#{$direction}: #{$value + 'px'};
     }
   }
 }
