@@ -8,9 +8,3 @@ Run UIty.css demo with a command `jekyll serve` and access via `localhost:4000`
 - md - tablet
 - lg - desktop (default)
 - xl - large desktop
-
-### Properties shortcuts
-- _h - horizontal
-- _v - vertical
-- _top - top
-- _btm - bottom
