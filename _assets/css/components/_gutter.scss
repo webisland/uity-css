@@ -1,0 +1,51 @@
+@mixin gutter($gutters, $prefix: "") {
+  .#{$prefix}gutter {
+    &__items {
+      @each $gutter in $gutters {
+        &_#{$gutter} {
+          margin: 0 -#{$gutter + 'px'} 0 0;
+        }
+      }
+    }
+
+    &__item {
+      @each $gutter in $gutters {
+        &_#{$gutter} {
+          padding: 0 #{$gutter + 'px'} 0 0;
+        }
+      }
+    }
+  }
+}
+
+@if $gutters {
+  .gutter {
+    overflow: hidden;
+  }
+
+  @include gutter($gutters);
+}
+
+@if $lg-gutters {
+  @include desktop {
+    @include gutter($lg-gutters, "lg-");
+  }
+}
+
+@if $md-gutters {
+  @include tablet {
+    @include gutter($md-gutter, "md-");
+  }
+}
+
+@if $sm-gutters {
+  @include mobile {
+    @include gutter($sm-gutter, "sm-");
+  }
+}
+
+@if $xs-gutters {
+  @include portrait-mobile {
+    @include gutter($xs-gutter, "xs-");
+  }
+}

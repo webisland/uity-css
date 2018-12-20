@@ -1,4 +1,4 @@
-# uity.css 0.1.4
+# uity.css 0.2.0
 
 Run UIty.css demo with a command `jekyll serve` and access via `localhost:4000`
 
