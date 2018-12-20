@@ -75,3 +75,19 @@
     }
   }
 }
+
+@include portrait-mobile {
+  .section {
+    &__title {
+      font-size: $xs-section-title-font-size;
+      font-weight: $xs-section-title-font-weight;
+      line-height: $xs-section-title-line-height;
+    }
+
+    &__subtitle {
+      font-size: $xs-section-subtitle-font-size;
+      font-weight: $xs-section-subtitle-font-weight;
+      line-height: $xs-section-subtitle-line-height;
+    }
+  }
+}
