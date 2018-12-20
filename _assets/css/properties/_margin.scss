@@ -1,73 +1,47 @@
-@mixin margin_value($direction, $value) {
-  &_#{$value} {
-    @if ($direction == 'h') {
-      margin-left: #{$value + 'px'};
-      margin-right: #{$value + 'px'};
-    } @else if $direction == 'v' {
-      margin-bottom: #{$value + 'px'};
-      margin-top: #{$value + 'px'};
-    } @else {
-      margin-#{$direction}: #{$value + 'px'};
+@mixin margin($margins, $modifier, $prefix: "") {
+  .#{$prefix}margin {
+    @each $margin in $margins {
+      &_#{$modifier} {
+        &_#{$margin} {
+          @if ($modifier == "h") {
+            margin-left: #{$margin + "px"};
+            margin-right: #{$margin + "px"};
+          } @else if $modifier == "v" {
+            margin-bottom: #{$margin + "px"};
+            margin-top: #{$margin + "px"};
+          } @else {
+            margin-#{$modifier}: #{$margin + "px"};
+          }
+        }
+      }
     }
   }
 }
 
-@mixin margin_v($direction) {
-  &_#{$direction} {
-    @include margin_value($direction, 0);
-    @include margin_value($direction, 5);
-    @include margin_value($direction, 10);
-    @include margin_value($direction, 15);
-    @include margin_value($direction, 20);
-    @include margin_value($direction, 30);
-    @include margin_value($direction, 40);
+@if $top-margins {
+  @include margin($top-margins, "top");
+}
+
+@if $lg-top-margins {
+  @include desktop {
+    @include margin($lg-top-margins, "top", "lg-");
   }
 }
 
-@mixin margin_h($direction) {
-  &_#{$direction} {
-    @include margin_value($direction, 0);
-    @include margin_value($direction, 5);
-    @include margin_value($direction, 10);
-    @include margin_value($direction, 15);
-    @include margin_value($direction, 20);
-    @include margin_value($direction, 30);
+@if $md-top-margins {
+  @include tablet {
+    @include margin($md-top-margins, "top", "md-");
   }
 }
 
-@mixin margin {
-  @include margin_h('h');
-  @include margin_h('left');
-  @include margin_h('right');
-  @include margin_v('v');
-  @include margin_v('top');
-  @include margin_v('bottom');
-}
-
-.margin {
-  @include margin;
-}
-
-@include desktop {
-  .lg-margin {
-    @include margin;
+@if $sm-top-margins {
+  @include mobile {
+    @include margin($sm-top-margins, "top", "sm-");
   }
 }
 
-@include tablet {
-  .md-margin {
-    @include margin;
-  }
-}
-
-@include mobile {
-  .sm-margin {
-    @include margin;
-  }
-}
-
-@include portrait-mobile {
-  .xs-margin {
-    @include margin;
+@if $xs-top-margins {
+  @include portrait-mobile {
+    @include margin($xs-top-margins, "top", "xs-");
   }
 }
