@@ -8,6 +8,10 @@
       max-width: $section-content-small-max-width;
     }
 
+    &_md {
+      max-width: $section-content-medium-max-width;
+    }
+
     &_lg {
       max-width: $section-content-large-max-width;
     }
