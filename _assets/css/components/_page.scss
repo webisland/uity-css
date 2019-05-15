@@ -3,8 +3,5 @@
   color: $page-color;
   font-family: $page-font-family;
   font-size: $page-font-size;
-
-  p {
-    line-height: $page-paragraph-line-height;
-  }
+  line-height: $page-line-height;
 }
