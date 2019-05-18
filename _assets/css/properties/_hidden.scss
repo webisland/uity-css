@@ -1,0 +1,45 @@
+@mixin hidden {
+  display: none !important;
+
+  &_to {
+    &_block {
+      display: block !important;
+    }
+
+    &_i-block {
+      display: inline-block !important;
+    }
+
+    &_flex {
+      display: flex !important;
+    }
+  }
+}
+
+.hidden {
+  @include hidden;
+}
+
+@include portrait-mobile {
+  .xs-hidden {
+    @include hidden;
+  }
+}
+
+@include mobile {
+  .sm-hidden {
+    @include hidden;
+  }
+}
+
+@include tablet {
+  .md-hidden {
+    @include hidden;
+  }
+}
+
+@include desktop {
+  .lg-hidden {
+    @include hidden;
+  }
+}
