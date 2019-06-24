@@ -34,18 +34,18 @@
 
 @if $md-gutters {
   @include tablet {
-    @include gutter($md-gutter, "md-");
+    @include gutter($md-gutters, "md-");
   }
 }
 
 @if $sm-gutters {
   @include mobile {
-    @include gutter($sm-gutter, "sm-");
+    @include gutter($sm-gutters, "sm-");
   }
 }
 
 @if $xs-gutters {
   @include portrait-mobile {
-    @include gutter($xs-gutter, "xs-");
+    @include gutter($xs-gutters, "xs-");
   }
 }
