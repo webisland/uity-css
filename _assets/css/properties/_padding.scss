@@ -9,6 +9,14 @@
     padding-top: $vertical;
   }
 
+  &_left {
+    padding-left: $horizontal;
+  }
+
+  &_right {
+    padding-right: $horizontal;
+  }
+
   &_top {
     padding-top: $vertical;
   }
